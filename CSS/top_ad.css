@@ -1,0 +1,21 @@
+.top_ad_bg {
+  background-color: #1a7971;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: center;
+  border: 0;
+}
+.top_ad_img {
+  display: flex;
+  margin: 0 auto;
+  border: 0;
+}
+.top_ad_X {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  border: 0;
+}

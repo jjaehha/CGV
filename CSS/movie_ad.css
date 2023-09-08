@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "NotoSansKR-Bold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Bold.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+@font-face {
+    font-family: "NotoSansKR-Light"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Light.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+@font-face {
+    font-family: "NotoSansKR-Medium"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Medium.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+@font-face {
+    font-family: "NotoSansKR-Regular"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Regular.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+/* 영상광고 */
+.ad {
+    width: 100%;
+    height: 498px;
+    background-color: #000000;
+}
+
+.ad_content {
+    width: 1040px;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+.ad_content > video {
+    width: inherit;
+    height: inherit;
+}
+
+.ad_content > .ad_text {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+
+.ad_text > h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "NotoSansKR-Bold";
+}
+
+.ad_text > p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "NotoSansKR-Light";
+}
+
+.ad_text > div {
+    display: flex;
+    align-items: center;
+}
+
+.ad_text > div > * {
+    margin-right: 10px;
+}
+
+.ad_text > div > Button {
+    background-color: gainsboro;
+    border: #000000 solid;
+    border-radius: 30px;
+    padding: 5px 15px 5px 18px;
+    display: flex;
+    align-items: center;
+}
+
+.ad_text > div > Button > a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "NotoSansKR-Regular";
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.mv_btn {
+    border: #ffffff solid 1px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mv_btn > img {
+    width: 15px;
+    margin: auto;
+}

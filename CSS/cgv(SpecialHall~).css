@@ -1,0 +1,502 @@
+* {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 특별관, 기프트콘, 공지사항 각각 내용물 div */
+#container .content {
+    width: 980px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #222;
+}
+
+/*  */
+/* 특별관 */
+/*  */
+
+/* 특별관 큰 div */
+.specialHall_wrap {
+    padding: 60px 0 21px;
+    margin-top: 40px;
+}
+
+/* 특별관 + 전체보기 부분(타이틀 div) */
+.specialHall_wrap .specialHall_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 타이틀 div -> 특별관 글자 */
+.specialHall_wrap .specialHall_title > h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* 타이틀 div -> 전체보기 버튼 */
+.specialHall_wrap .specialHall_title > .btn_allView {
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    background: transparent url(https://img.cgv.co.kr/R2014/images/common/ico/arrowR_8x13.png) no-repeat scroll
+        calc(100% - 7px) center / 8px 13px; /* color, url, repeat, attachment position(수평위치 수직위치) / size(너비 높이) */
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%); /* 박스모델 그림자 효과 - 수평거리 수직거리 흐림정도 번짐정도 색상 */
+    color: #222;
+}
+
+/* 타이틀 div -> 전체보기 버튼 클릭됐을 때 */
+.specialHall_wrap .specialHall_title > .btn_allView:active {
+    /* border: 3px solid #ead3d7; */
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* 이미지 + 리스트 4개 부분(타이틀 아래 내용물 div) */
+.specialHall_wrap .specialHall_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+}
+
+/* 타이틀 아래 내용물 div -> a (이미지 부분) */
+.specialHall_wrap .specialHall_content > a {
+    width: 500px;
+    height: 260px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* 타이틀 아래 내용물 div -> a (이미지 부분) 클릭됐을 때 */
+.specialHall_wrap .specialHall_content > a:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* 타이틀 아래 내용물 div -> a -> img */
+.specialHall_wrap .specialHall_content > a > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 타이틀 아래 내용물 div -> ul(리스트 전체) */
+.specialHall_wrap .specialHall_content > .specialHall_content_list {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 타이틀 아래 내용물 div -> 각 리스트 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li {
+    border-top: 1px solid #e9e9e9;
+}
+
+/* 타이틀 아래 내용물 div -> 마지막 리스트 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li:last-child {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+/* 타이틀 아래 내용물 div -> 각 리스트에 커서 위치할 때 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li:hover {
+    border-top: 1px solid transparent;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+/* 타이틀 아래 내용물 div -> 각 리스트에 커서 위치할 때 그 아래 리스트 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li:hover + li {
+    border-top: 1px solid transparent;
+}
+
+/* 타이틀 아래 내용물 div -> 각 리스트 클릭됐을 때 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* 타이틀 아래 내용물 div -> 각 리스트의 a */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 25px 19px 19px;
+}
+
+/* 타이틀 아래 내용물 div -> 각 리스트의 a -> 영어 글자 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li a > strong {
+    font-weight: 400;
+    font-size: 18px;
+    color: #222;
+}
+
+/* 타이틀 아래 내용물 div -> 커서 위치하는 리스트의 a 의 영어 글자 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li:hover > a > strong {
+    font-weight: 700;
+}
+
+/* 타이틀 아래 내용물 div -> 각 리스트의 a -> 해시태그 글자 */
+.specialHall_wrap .specialHall_content > .specialHall_content_list li a > span {
+    padding: 2px 7px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+
+/*  */
+/* 기프트콘 */
+/*  */
+
+/* 기프트콘 큰 div */
+.giftcon_wrap {
+    padding: 60px 0 0;
+}
+
+/* [기프트카드, 음료, 스낵] 리스트 전체 */
+.giftcon_wrap .giftcon_content_list {
+    padding: 0;
+    display: flex;
+}
+
+/* [기프트카드, 음료, 스낵] 각 리스트  */
+.giftcon_wrap .giftcon_content_list > li {
+    width: 270px;
+    padding: 20px 19px 30px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+/* [음료, 스낵] 리스트  */
+.giftcon_wrap .giftcon_content_list > li ~ li {
+    margin-left: 25px;
+}
+
+/* [기프트카드, 음료, 스낵] 리스트의 (카드/음료/스낵 + 더보기 부분) div  */
+.giftcon_wrap .giftcon_content_list > li > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #222;
+}
+
+/* [기프트카드, 음료, 스낵] 리스트의 더보기 버튼 */
+.giftcon_wrap .giftcon_content_list > li > div > .btn_more {
+    padding: 2px 15px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #f4f4f4;
+    border-radius: 11px;
+}
+
+/* [기프트카드, 음료, 스낵] 리스트의 더보기 버튼 클릭됐을 때 */
+.giftcon_wrap .giftcon_content_list > li > div > .btn_more:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* [기프트카드, 음료, 스낵] 리스트 안의 3개 리스트(작은 리스트) 전체 */
+.giftcon_wrap .giftcon_content_list > li > ul {
+    padding: 0;
+}
+
+/* 작은 리스트 중 첫 번째 리스트(카드A형, 탄산음료, 나쵸) */
+.giftcon_wrap .giftcon_content_list > li > ul > li:first-child {
+    margin-top: 27px;
+}
+
+/* 작은 리스트 중 2,3 번째 리스트 */
+.giftcon_wrap .giftcon_content_list > li > ul > li:not(:first-child) {
+    margin-top: 20px;
+}
+
+/* 각각의 작은 리스트 클릭됐을 때 */
+.giftcon_wrap .giftcon_content_list > li > ul > li:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* 각각의 작은 리스트의 a(상품 이미지 + 상품 글자) */
+.giftcon_wrap .giftcon_content_list > li > ul > li > a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* 각각의 작은 리스트의 상품 이미지 감싸고 있는 div */
+.giftcon_wrap .giftcon_content_list > li > ul > li > a > .img_wrap {
+    position: relative;
+    width: 75px;
+    height: 76px;
+    border-radius: 5px;
+}
+
+/* 각각의 작은 리스트의 상품 이미지 */
+.giftcon_wrap .giftcon_content_list > li > ul > li > a > .img_wrap > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 각각의 작은 리스트의 상품 글자 전체 div */
+.giftcon_wrap .giftcon_content_list > li > ul > li > a > .giftcon_info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+/* 각각의 작은 리스트의 상품 글자 중 윗 글자 */
+.giftcon_wrap .giftcon_content_list > li > ul > li > a > .giftcon_info > span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* 각각의 작은 리스트의 상품 글자 중 아래 글자 */
+.giftcon_wrap .giftcon_content_list > li > ul > li > a > .giftcon_info > strong {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*  */
+/* 공지사항 */
+/*  */
+
+/* 공지사항 큰 div */
+.notice_wrap {
+    padding: 30px 0 120px;
+}
+
+/* 공지사항&앱 다운로드 + 이미지 배너 div */
+.notice_wrap > .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 공지사항 + 앱 다운로드 div */
+.notice_wrap .notice_container {
+    display: flex;
+    width: 736px;
+    height: 236px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+/* 공지사항 + 고객센터 div */
+.notice_wrap .notice_container > .notice_content {
+    width: 460px;
+    padding: 24px 26px 20px 30px;
+}
+
+/* 공지사항 div */
+.notice_wrap .notice_container > .notice_content > .notice_part {
+    padding-bottom: 21px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+/* 공지사항 div -> 공지사항 글자 */
+.notice_wrap .notice_container > .notice_content > .notice_part > strong {
+    float: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+}
+
+/* 공지사항 div -> 시스템 점점 글자 링크 */
+.notice_wrap .notice_container > .notice_content > .notice_part > .btn_link {
+    float: left;
+    margin-top: 2px;
+    margin-left: 28px;
+    max-width: 300px;
+    font-size: 14px;
+    color: #222;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 공지사항 div -> 시스템 점점 글자 링크 클릭됐을 때 */
+.notice_wrap .notice_container > .notice_content > .notice_part > .btn_link:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* 공지사항 div -> 더보기 버튼 */
+.notice_wrap .notice_container > .notice_content > .notice_part > .btn_more {
+    float: right;
+    padding: 2px 15px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #f4f4f4;
+    border-radius: 11px;
+}
+
+/* 공지사항 div -> 더보기 버튼 클릭됐을 때 */
+.notice_wrap .notice_container > .notice_content > .notice_part > .btn_more:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* 공지사항 div 아래 부분 */
+.notice_wrap .notice_container > .notice_content > .notice_part::after {
+    clear: both;
+    content: "";
+    display: block;
+    /* font-size: 0; */
+    /* line-height: 0; */
+}
+
+/* 고객센터 div */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_content {
+    display: flex;
+    padding: 19px 0 22px;
+}
+
+/* 고객센터 div -> 고객센터 글자 */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_content > div:first-child > strong {
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+}
+
+/* 고객센터 div -> 고객센터 번호 부분 div */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_content > div:last-child {
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+    line-height: 1.5rem;
+}
+
+/* 고객센터 번호 */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_content > div:last-child > strong {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222;
+}
+
+/* 고객센터 운영시간 ~ */
+.notice_wrap
+    .notice_container
+    > .notice_content
+    > .client_part
+    > .client_content
+    > div:last-child
+    > span:first-of-type {
+    font-size: 14px;
+    color: #222;
+}
+
+/* 업무시간 외 ~ */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_content > div:last-child > span:last-child {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 고객센터 아래 FAQ ~ 문의 링크 div */
+.notice_wrap .notice_container > .notice_content > .client_part .client_btn {
+    display: flex;
+}
+
+/* 고객센터 아래 FAQ ~ 문의 각 링크 버튼 */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_btn > a {
+    padding: 7px 14px;
+    font-size: 14px;
+    color: #222;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+
+/* 고객센터 아래 FAQ ~ 문의 각 링크 버튼 클릭됐을 때 */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_btn > a:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}
+
+/* 고객센터 아래 2,3 번째 문의 링크 버튼 */
+.notice_wrap .notice_container > .notice_content > .client_part > .client_btn > a ~ a {
+    margin-left: 10px;
+}
+
+/* 앱 다운로드 div */
+.notice_wrap .notice_container > .notice_qr {
+    display: flex;
+    flex-direction: column;
+    width: 222px;
+    text-align: center;
+    border-left: 1px solid #e4e4e4;
+}
+
+/* 앱 다운로드 div -> (앱 다운로드) 글자 */
+.notice_wrap .notice_container > .notice_qr > strong {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+}
+
+/* 앱 다운로드 div -> (CGV앱에서 ~) 글자 */
+.notice_wrap .notice_container > .notice_qr > span {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #222;
+}
+
+/* 앱 다운로드 div -> qr코드 이미지 div */
+.notice_wrap .notice_container > .notice_qr > div {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 29px auto 0;
+}
+
+/* 앱 다운로드 div -> qr코드 이미지 */
+.notice_wrap .notice_container > .notice_qr > div > img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 앱 다운로드 div -> (QR코드를 스캔 ~) 글자 */
+.notice_wrap .notice_container > .notice_qr > p {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* 이미지 배너 div */
+.notice_wrap .notice_banner {
+    overflow: hidden;
+    position: relative;
+    width: 211px;
+    height: 238px;
+    border-radius: 10px;
+}
+
+/* 배너 버튼 */
+.notice_wrap .notice_banner > .btn_swipe {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background: #fff url(https://img.cgv.co.kr/R2014/images/common/ico/main/play.png) no-repeat scroll 10px center /
+        11px 15px;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+}
+
+/* 배너 버튼 클릭됐을 때 */
+.notice_wrap .notice_banner > .btn_swipe:active {
+    box-shadow: 0.7px 0.7px 0 2px #ead3d7, -0.7px -0.7px 0 2px #ead3d7;
+}

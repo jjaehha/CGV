@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "NotoSansKR-Bold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Bold.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+@font-face {
+    font-family: "NotoSansKR-Light"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Light.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+@font-face {
+    font-family: "NotoSansKR-Medium"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Medium.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+@font-face {
+    font-family: "NotoSansKR-Regular"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../서체/NotoSansKR-Regular.otf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+.Event {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 327px;
+    padding-top: 50px;
+}
+
+.ev {
+    margin: 0 auto;
+    width: 980px;
+    height: inherit;
+}
+
+/* 제목 부분 */
+.ev_title {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+}
+
+.ev_title > span {
+    font-family: "NotoSansKR-Bold";
+    font-size: 26px;
+}
+
+.ev_title > div {
+    display: flex;
+    align-items: center;
+}
+.ev_title > div > .ev_btn {
+    border: gainsboro solid 1px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+}
+
+.ev_title > div > .ev_btn > img {
+    width: 12px;
+}
+
+.view_all {
+    border: #e2e2e2 1px solid;
+    border-radius: 30px;
+    padding: 3px 10px 3px 18px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.view_all > a {
+    text-decoration: none;
+    font-family: "NotoSansKR-Regular";
+    font-size: 14px;
+    margin-right: 15px;
+    color: #000000;
+}
+
+/* 내용 부분 */
+.ev_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ev_picture {
+    width: 311px;
+    height: 272px;
+}
+
+.ev_picture:nth-of-type(3) {
+    margin-right: 0;
+}
+
+.ev_picture > img {
+    width: 100%;
+    height: 207px;
+    border-radius: 15px;
+}
+
+.ev_picture :nth-child(2) {
+    font-family: "NotoSansKR-Medium";
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.ev_picture :nth-child(3) {
+    font-family: "NotoSansKR-Light";
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #888888;
+}
